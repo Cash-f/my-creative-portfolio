@@ -1,5 +1,3 @@
-// src/components/GradientText.tsx
-
 import React from "react";
 
 interface GradientTextProps {
@@ -9,11 +7,11 @@ interface GradientTextProps {
 
 export function GradientText({ children, className }: GradientTextProps) {
   return (
-    // 👇 Changed this from a <span> to a <div>
     <div
       className={`
         bg-gradient-to-r from-blue-500 to-purple-500 
         bg-clip-text text-transparent
+        p-4
         ${className || ""}
       `}
     >

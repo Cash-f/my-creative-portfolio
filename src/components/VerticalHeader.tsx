@@ -1,20 +1,18 @@
-// src/components/VerticalHeader.tsx
-
 "use client";
 
 import Link from 'next/link';
 
-// Define the type for our navigation items
 type NavItem = {
   label: string;
   href: string;
 };
 
 export function VerticalHeader() {
+  // Update the hrefs to point to the section IDs
   const navItems: NavItem[] = [
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
-    { label: 'Projects', href: '/projects' },
+    { label: 'Work', href: '#work' },
+    { label: 'About', href: '#about' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   return (

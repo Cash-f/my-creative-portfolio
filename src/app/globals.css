@@ -1,26 +1,14 @@
 @import "tailwindcss";
 
+.font-header {
+  font-family: var(--font-great-vibes), cursive !important;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-:root {
-  --font-inter: 'Inter', system-ui, sans-serif;
-  --font-great-vibes: 'Great Vibes', cursive;
-}
-
-body {
-  font-family: var(--font-inter);
-}
-
-.font-handwriting {
-  font-family: var(--font-great-vibes) !important;
-}
-:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,11 +18,14 @@ body {
   }
 }
 
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
+
+
 
 .loader-overlay {
   position: fixed;

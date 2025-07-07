@@ -16,14 +16,14 @@ export function Loader({ finished, onFinished }: LoaderProps) {
   return (
     <div className={`loader-overlay ${finished ? 'finished' : ''}`}>
       <div className="loader-content">
-        {/* 👇 Use GradientText as a wrapper */}
-        <GradientText className="text-6xl font-mono flex items-center">
+        
+        <GradientText className="text-6xl font-header flex items-center pr-2">
           <CountUp
             to={100}
             duration={1.5}
             onEnd={onFinished}
           />
-          <span>%</span>
+          <span className="pl-2">%</span>
         </GradientText>
       </div>
     </div>

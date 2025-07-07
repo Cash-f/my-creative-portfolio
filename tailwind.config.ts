@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ['var(--font-inter)'],
-        handwriting: ['var(--font-great-vibes)'],
+        header: ['var(--font-great-vibes)', 'cursive'],
       },
     },
   },
