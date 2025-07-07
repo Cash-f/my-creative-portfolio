@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import ClientWrapper from "@/components/ClientWrapper";
+
 
 const inter = localFont({
-  src: "../../public/fonts/Inter_24pt-Regular.ttf",
-  variable: "--font-inter",
+  src: '../../public/fonts/Inter_24pt-Regular.ttf',
+  variable: '--font-inter',
 });
 
 const greatVibes = localFont({
-  src: "../../public/fonts/GreatVibes-Regular.ttf",
+  src: '../../public/fonts/GreatVibes-Regular.ttf',
   weight: "400",
-  variable: "--font-great-vibes",
+  variable: '--font-great-vibes',
 });
 
 export const metadata: Metadata = {
@@ -27,7 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${greatVibes.variable} font-inter`}>
-        <ClientWrapper>{children}</ClientWrapper>
+        
+        {children}
       </body>
     </html>
   );
