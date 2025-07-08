@@ -43,7 +43,7 @@ export default function Home() {
     },
     {
       id: 4,
-      title: "Project Delta",
+      title: "Project Delta2",
       description: "VR experience prototype",
       image: "/path/to/project4.jpg",
       tech: ["Unity", "VR", "Oculus"]

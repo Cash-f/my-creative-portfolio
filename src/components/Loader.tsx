@@ -17,7 +17,7 @@ export function Loader({ finished, onFinished }: LoaderProps) {
     <div className={`loader-overlay ${finished ? 'finished' : ''}`}>
       <div className="loader-content">
         
-        <GradientText className="text-6xl font-header flex items-center pr-2">
+        <GradientText className="text-6xl flex items-center pr-2">
           <CountUp
             to={100}
             duration={1.5}
